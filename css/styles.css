@@ -77,7 +77,7 @@ form {
   margin: 0.5rem 0.5rem;
   padding: 0.5rem 0.8rem;
   border: 1px solid black;
-  background: grey;
+  background: lightgrey;
 }
 
 
@@ -97,6 +97,8 @@ form {
 .delete-button {
   margin: 5px 15px;
 }
+
+
 textarea {
   vertical-align: top;
 }
