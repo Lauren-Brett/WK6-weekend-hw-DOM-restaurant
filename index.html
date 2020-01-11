@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Restaurant Reviews</title>
+  <script src="js/app.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <h1 id="heading">Restaurant Reviews</h1>
+  <p id="welcome-paragraph">Reviews of restaurants visited:</p>
+  <form id="form">
+    <!-- <div id="form-wrapper"> -->
+
+      <div class="form-item">
+        <strong><label for="restaurant" class="data">Restaurant:</label></strong>
+        <input type="text" id="restaurant" required/>
+      </div>
+
+      <div class="form-item">
+        <label for="meal" class="data">Meal:</label>
+        <input type="text" id="meal" required/>
+      </div>
+
+      <div class="form-item">
+        <label for="rate" class="data">Rate your meal:</label>
+        <select id="rate">
+          <option value="" disabled selected></option>
+          <option value="5*">5 stars</option>
+          <option value="4*">4 stars</option>
+          <option value="3*">3 stars</option>
+          <option value="2*">2 stars</option>
+          <option value="1*">1 stars</option>
+        </select>
+
+        <div class="form-item">
+          <!-- <p>Would you recommend this eatery:</p> -->
+          <label for="recommend">Would you recommend this eatery?</label>
+
+          <input type="radio" value="Yes" id="recommendYes">Yes<br>
+          <input type="radio"  value="No" id="recommendNo">No<br>
+        </div>
+
+
+      </div>
+    <!-- </div> -->
+    <br>
+    <input type="submit" value="save"/>
+  </form>
+
+  <button id="delete-all">Delete All</button>
+
+  <h2>Restaurant Reviewed:</h2>
+  <div class="saved-list">
+    <ul id="reviewed-list"></ul>
+  </div>
+</body>
+</html>

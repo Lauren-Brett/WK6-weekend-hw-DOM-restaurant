@@ -1,0 +1,65 @@
+h1 {
+  font-weight: bold;
+}
+
+
+h1 {
+  text-align: center;
+}
+
+
+h2 {
+  color: green;
+}
+
+/* form {
+  width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: left;
+ }
+
+.form-item {
+  width: 300px;
+
+ } */
+
+
+ /* form {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 100%;
+}
+.form-item {
+  width: 40%;
+  height: 40%;
+} */
+
+form {
+  margin: 0 auto;
+  width: 200px
+}
+
+.form-item {
+
+  margin: 10px
+}
+
+
+.form-item {
+  font-family: Helvetica, serif;
+  font-size: 0.9em;
+  font-weight: bold;
+  letter-spacing: 0.07em
+}
+
+reviwed-list {
+ display: flex;
+ flex-flow: row nowrap;
+ height: 100%;
+}
+
+.ul {
+ width: 40%;
+ height: 40%;
+}
