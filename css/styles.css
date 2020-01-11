@@ -67,17 +67,20 @@ form {
 } */
 
 
-.restaurant-reviwed {
+.restaurant-reviewed {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
+
 }
 
 #reviewed-list {
-  margin: 0.5rem 0.5rem;
+  margin: 0.5rem 5em 0.5rem 0.5em;
   padding: 0.5rem 0.8rem;
+
   border: 1px solid black;
   background: lightgrey;
+
 }
 
 
