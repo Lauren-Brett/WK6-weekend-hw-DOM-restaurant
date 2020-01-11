@@ -48,7 +48,11 @@ form {
   font-size: 0.9em;
   font-weight: bold;
   letter-spacing: 0.07em;
-  margin: 5px 20px;
+  margin: 5px 15px;
+}
+
+.form-item .recommend {
+
 }
 
 /* reviwed-list {
@@ -63,18 +67,17 @@ form {
 } */
 
 
-#saved-list {
+.restaurant-reviwed {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
 }
 
-.reviewed-list {
+#reviewed-list {
   margin: 0.5rem 0.5rem;
   padding: 0.5rem 0.8rem;
-  border: 1px solid #20437c;
-  border-radius: 5%;
-  background: #ddeaff;
+  border: 1px solid black;
+  background: grey;
 }
 
 
@@ -83,22 +86,17 @@ form {
   background-color: grey;
  border: none;
  color: white;
- padding: 5px 5px;
+ padding: 4px 6px 8px;
  text-align: center;
  display: inline-block;
  font-size: 20px;
  margin: 0 auto;
  cursor: pointer;
-
-
 }
 
-
- .form-item .comments {
-  color: red;
-
+.delete-button {
+  margin: 5px 15px;
 }
-
 textarea {
   vertical-align: top;
 }
