@@ -10,35 +10,21 @@ h2 {
 }
 
 body {
+  font-family: Verdana, serif;
   margin-top: 100px;
   margin-bottom: 50px;
   margin-left: 30px;
 }
-/* form {
-  width: 100%;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: left;
- }
 
-.form-item {
-  width: 300px;
-
- } */
-
-
- /* form {
-  display: flex;
-  flex-flow: row nowrap;
-  height: 100%;
 }
 .form-item {
   width: 40%;
   height: 40%;
-} */
+}
 
 form {
   margin: 0 auto;
+
   /* width: 100px */
 }
 
@@ -48,36 +34,21 @@ form {
   font-size: 0.9em;
   font-weight: bold;
   letter-spacing: 0.07em;
-  margin: 5px 15px;
+  margin: 10px 15px;
 }
-
-.form-item .recommend {
-
-}
-
-/* reviwed-list {
- display: flex;
- flex-flow: row nowrap;
- height: 100%;
-}
-
-.ul {
- width: 40%;
- height: 40%;
-} */
 
 
 .restaurant-reviewed {
   display: flex;
-  flex-wrap: wrap;
+
+  flex-wrap: row wrap;
   list-style-type: none;
 
 }
 
 #reviewed-list {
-  margin: 0.5rem 5em 0.5rem 0.5em;
+  margin: 0.5rem 5em 0.5rem;
   padding: 0.5rem 0.8rem;
-
   border: 1px solid black;
   background: lightgrey;
 
@@ -97,11 +68,11 @@ form {
  cursor: pointer;
 }
 
-.delete-button {
-  margin: 5px 15px;
-}
-
 
 textarea {
   vertical-align: top;
+}
+
+.delete-button {
+  margin: 5px 15px;
 }
