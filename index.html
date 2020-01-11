@@ -8,22 +8,31 @@
 </head>
 <body>
   <h1 id="heading">Restaurant Reviews</h1>
-  <p id="welcome-paragraph">Reviews of restaurants visited:</p>
+  <p id="welcome-paragraph">Review a Restaurant:</p>
   <form id="form">
-    <!-- <div id="form-wrapper"> -->
 
       <div class="form-item">
-        <strong><label for="restaurant" class="data">Restaurant:</label></strong>
+        <label for="restaurant">Restaurant Name:</label>
         <input type="text" id="restaurant" required/>
       </div>
 
+      <!-- <div class="form-item">
+        <label for="location" class="data">Location:</label>
+        <br>
+        <input type="checkbox" id="location" value="Edinburgh">Edinburgh<br>
+        <input type="checkbox" id="location" value="Glasgow">Glasgow<br>
+        <input type="checkbox" id="location" value="Dundee">Dundee<br>
+        <input type="checkbox" id="location" value="Aberdeen">Aberdeen<br>
+
+      </div> -->
+
       <div class="form-item">
-        <label for="meal" class="data">Meal:</label>
-        <input type="text" id="meal" required/>
+        <label for="meal">What did you order:</label>
+        <input type="text" id="meal" maxlength="20" required/>
       </div>
 
       <div class="form-item">
-        <label for="rate" class="data">Rate your meal:</label>
+        <label for="rate">Rate your meal:</label>
         <select id="rate">
           <option value="" disabled selected></option>
           <option value="5*">5 stars</option>
@@ -33,26 +42,37 @@
           <option value="1*">1 stars</option>
         </select>
 
-        <div class="form-item">
-          <!-- <p>Would you recommend this eatery:</p> -->
-          <label for="recommend">Would you recommend this eatery?</label>
 
-          <input type="radio" value="Yes" id="recommendYes">Yes<br>
-          <input type="radio"  value="No" id="recommendNo">No<br>
+        <div class="form-item">
+          <label for="recommend">Would you recommend this eatery?</label>
+          <input  type="radio" name="recommend" value="Yes" id="recommendYes">Yes<br>
+          <input  type="radio"  name="recommend" value="No" id="recommendNo">No<br>
         </div>
 
 
-      </div>
-    <!-- </div> -->
+        <div class="form-item">
+          <div class="comments">
+            <label for="comment">Comments:</label>
+            <textarea name="comment" id="comment" rows="6" cols="80" maxlength="60"></textarea>
+          </div>
+        </div>
+
     <br>
-    <input type="submit" value="save"/>
+        <div class="save-button">
+          <input type="submit" value="Save Review"/>
+        </div>
   </form>
+</div>
 
+
+<div class="delete-button">
   <button id="delete-all">Delete All</button>
+</div>
 
-  <h2>Restaurant Reviewed:</h2>
+  <strong><h2>Restaurant Reviewed:</h2></strong>
   <div class="saved-list">
-    <ul id="reviewed-list"></ul>
+    <ul style="list-style: none;" id="reviewed-list"></ul>
+    <p>list here</p>
   </div>
 </body>
 </html>

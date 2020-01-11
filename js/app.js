@@ -7,6 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
   deleteAllButton.addEventListener('click', handleDeleteAll);
 
 
+  // const radioButton = document.querySelector('#form[name="recommend"]')
+  // radioButton.addEventListener('input', handleRadio)
+
 });
 //////////////////////////////////////////////////////
 
@@ -26,9 +29,13 @@ const createRestaurantReviewed = function (form) {
   restaurantReviewed.classList.add('restaurantReviewed')
 
 
-  const restaurant = document.createElement('p')
+  const restaurant = document.createElement('h3')
   restaurant.textContent = `Restaurant: ${form.restaurant.value}`;
   restaurantReviewed.appendChild(restaurant);
+
+  // const location = document.createElement('p')
+  // restaurant.textContent = form['location'].checked;
+  // restaurantReviewed.appendChild(location)
 
   const meal = document.createElement('p')
   meal.textContent = `Meal Ordered: ${form.meal.value}`;
@@ -36,21 +43,20 @@ const createRestaurantReviewed = function (form) {
 
 
   const rate = document.createElement('p')
-
-  rate.textContent = `Rating Overall: ${form.rate.value}`;
+  rate.textContent = `Overall Rating: ${form.rate.value}`;
   restaurantReviewed.appendChild(rate);
 
 
+  const recommend = document.createElement('p')
+  recommend.textContent = `Recommend: ${form['recommend'].value}`;
+  restaurantReviewed.appendChild(recommend);
 
-  const recommendYes = document.createElement('p')
-  recommendYes.textContent = form.recommendYes.value;
-  restaurantReviewed.appendChild(recommendYes);
+  const comment = document.createElement('p')
+  comment.textContent = `Comments: ${form.comment.value}`
+  restaurantReviewed.appendChild(comment)
 
 
 
-  // const recommendNo = document.createElement('p')
-  // recommendNo.textContent = form.recommendNo.value;
-  // restaurantReviewed.appendChild(recommendNo);
 
   return restaurantReviewed;
 
